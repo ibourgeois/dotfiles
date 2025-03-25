@@ -1,6 +1,14 @@
 #! /bin/zsh
 
+# Copy existing dotfiles to a backup folder
+
+mkdir -p ~/dotfiles-backup
+cp ~/.zshrc ~/dotfiles-backup/.zshrc
+cp ~/.zprofile ~/dotfiles-backup/.zprofile
+cp ~/update.sh ~/dotfiles-backup/update.sh
+
 # Symlink the dotfiles
+
 ln -sf $(pwd)/.zshrc ~/.zshrc
 ln -sf $(pwd)/.zprofile ~/.zprofile
 ln -sf $(pwd)/update.sh ~/update.sh
