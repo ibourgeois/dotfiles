@@ -1,9 +1,9 @@
 #! /bin/zsh
 
 # Symlink the dotfiles
-ln -s $(pwd)/dotfiles/.zshrc ~/.zshrc
-ln -s $(pwd)/dotfiles/.zprofile ~/.zprofile
-ln -s $(pwd)/dotfiles/update.sh ~/update.sh
+ln -sf $(pwd)/.zshrc ~/.zshrc
+ln -sf $(pwd)/.zprofile ~/.zprofile
+ln -sf $(pwd)/update.sh ~/update.sh
 
 # Install Homebrew if not installed
 
