@@ -9,14 +9,14 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ################################################################################
 
 alias c='clear'
-alias reload='source ~/.zshrc'
-alias update='~/update.sh'
+alias reload='source ${HOME}/.zshrc'
+alias update='${HOME}/update.sh'
 
 ################################################################################
 # ZSH
 ################################################################################
 
-alias zshconfig='code ~/.zshrc ~/.zprofile'
+alias zshconfig='code ${HOME}/.zshrc ${HOME}/.zprofile'
 
 ################################################################################
 # Laravel
