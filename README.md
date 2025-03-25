@@ -31,9 +31,9 @@ cd dotfiles
 
 ## Usage
 
-Once installed, you have access to a new alias `update` you can run in your terminal anytime you want to update your dotfiles and the applications that you manage with your new `upgrade.sh` script!
+Once installed, you have access to a new alias `update` you can run in your terminal anytime you want to update your dotfiles and the applications that you manage with your new `update.sh` script!
 
-If you want to add a new application, search for the proper command on the [Homebrew site](https://formulae.brew.sh/), and edit the `upgrade.sh` script to include your new app. Then open your terminal and run the `upgrade` command!
+If you want to add a new application, search for the proper command on the [Homebrew site](https://formulae.brew.sh/), and edit the `update.sh` script to include your new app. Then open your terminal and run the `update` command!
 
 ## Warning
 
