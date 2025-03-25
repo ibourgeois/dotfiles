@@ -11,7 +11,7 @@ brew update
 # Install Oh My Zsh if not installed
 
 echo "Updating Oh My Zsh..."
-./.oh-my-zsh/tools/upgrade.sh
+${HOME}/.oh-my-zsh/tools/upgrade.sh
 
 # Install CLI Tools
 
@@ -91,3 +91,5 @@ brew install --cask \
     zoom
 
 brew upgrade
+
+brew cleanup
