@@ -1,5 +1,17 @@
 #! /bin/zsh
 
+# Get the actual script location, following symlinks
+
+SCRIPT_PATH="$(realpath "$0" || readlink -f "$0" || echo "$0")"
+SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
+
+# Switch to the repo directory
+
+cd "$SCRIPT_DIR" || {
+  echo "Failed to switch to dotfiles directory: $SCRIPT_DIR"
+  exit 1
+}
+
 # Checking for updates to dotfiles
 
 echo "Checking for updates to dotfiles..."
