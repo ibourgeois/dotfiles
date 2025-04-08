@@ -25,6 +25,11 @@ brew update
 echo "Updating Oh My Zsh..."
 ${HOME}/.oh-my-zsh/tools/upgrade.sh
 
+# Brew Taps
+
+brew tap \
+    gantoreno/macfetch
+
 # Install CLI Tools
 
 brew install \
@@ -38,6 +43,8 @@ brew install \
     k6 \
     kind \
     kubernetes-cli \
+    macfetch \
+    nvm \
     openjdk@23 \
     poetry \
     postgresql \
@@ -47,17 +54,16 @@ brew install \
     starship \
     stripe \
     surrealdb/tap/surreal \
-    telepresenceio/telepresence/telepresence-oss \
     terminal-notifier
 
 # Install Applications
 
 brew install --cask \
-    ableton-live-suite \
     audacity \
     balenaetcher \
     betterdisplay \
     beekeeper-studio \
+    blender \
     bruno \
     buttercup \
     caffeine \
@@ -78,6 +84,7 @@ brew install --cask \
     kap \
     logi-options+ \
     logi-options-plus \
+    meld-studio \
     microsoft-auto-update \
     microsoft-edge \
     microsoft-office \
@@ -89,13 +96,10 @@ brew install --cask \
     ollama \
     phpstorm \
     rancher \
-    reaper \
-    rekordbox \
     steam \
     tableplus \
     unity \
     virtualbox \
-    virtualdj \
     visual-studio-code \
     webex \
     zed \
